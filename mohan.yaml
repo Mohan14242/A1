@@ -3,9 +3,14 @@
   become: yes 
   tasks: 
   - name: downloasding the file s
-    unarchive: 
-      src: web.zip 
+    url: https://roboshop-builds.s3.amazonaws.com/web.zip
+    dest: chiru/
+    mode: "0777"
+  - name: unarchieving 
+    unarchieve: 
+      src: chiru/ 
       dest: chiru/
+  
    
 
 
