@@ -1,7 +1,7 @@
 - name: installing the playbooks 
   hosts: localhost 
   become: yes 
-  variables: 
+  vars:
     packages: 
       nginx: installed 
   tasks: 
