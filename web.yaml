@@ -13,7 +13,7 @@
       enabled: True 
   - name: removing the deafult web page in the nginx server 
     file: 
-      path: /usr/share/nginx/html/*
+      path: /usr/share/nginx/html/
       state: absent
 
   
