@@ -5,7 +5,7 @@
   - name: getting the file from the 
     fetch:
       src: /home/centos/fuck.txt
-      dest: /home/centos
+      dest: fuck.txt
    
 
 
