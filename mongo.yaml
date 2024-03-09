@@ -9,7 +9,7 @@
   - name: installing the mongodb 
     become: yes
     yum: 
-      name: mongod 
+      name: mongo
       state: present 
   
   
