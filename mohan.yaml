@@ -3,4 +3,11 @@
   become: yes 
   tasks:
   - name : running the commands
-    command: echo "this is the mohan"
+    user: 
+      name: mohan
+      comment: mohan 
+      uid: 1001
+      gid: 1001
+      home: /home/mohan 
+      
+
