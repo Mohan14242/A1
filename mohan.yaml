@@ -3,16 +3,12 @@
   become: yes 
   vars:
     packages: 
-      nginx-1.2.2: present
       nginx: present
   tasks: 
   - name: installing the packages 
     yum: 
       name: "{{item.key}}"
       state: "{{item.value}}"
-    register: output
     with_dict: "{{packages}}"
-  - name: displaying the mssages
-    debug: 
-      msg: "{{output}}"
+
 
