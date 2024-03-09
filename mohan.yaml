@@ -1,14 +1,7 @@
 - name: installing the playbooks 
   hosts: localhost 
   become: yes 
-  vars:
-    packages: 
-      nginx: present
-  tasks: 
-  - name: installing the packages 
-    yum: 
-      name: "{{item.key}}"
-      state: "{{item.value}}"
-    with_dict: "{{packages}}"
-
-
+  tasks:
+  - name : running the commands
+    command: ls -l
+    
