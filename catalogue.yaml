@@ -1,0 +1,10 @@
+- name: setting up the catalogue component 
+  hosts: catalogue
+  tasks:
+  - name: running the shell script to run some configurations
+    shell: "curl -sL https://rpm.nodesource.com/setup_lts.x | bash"
+  - name: setting up the nodejs 
+    yum: 
+      name: nodejs
+      state: present
+    
