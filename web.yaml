@@ -1,0 +1,23 @@
+- name: installing the playbooks 
+  hosts: web
+  become: yes 
+  tasks: 
+  - name: installing the nginx 
+    yum : 
+      name: nginx 
+      state: present 
+  - name: starting the nginx service 
+    service: 
+      name: nginx 
+      state: started 
+      enabled: True 
+  
+
+  
+
+
+
+
+    
+
+
