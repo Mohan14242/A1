@@ -14,8 +14,9 @@
   - name: changing the server configuration 
     become: yes 
     replace:
-      path: /ect/mongod.conf 
+      path: /etc/mongod.conf 
       regexp: "127.0.0.1"
       replace: "0.0.0.0"
+  
   
   
