@@ -2,6 +2,10 @@
   hosts: localhost 
   become: yes 
   tasks: 
+  - name: installing the pip 
+    pip: 
+      name: boto3 
+      state: present
   - name: downloasding the file s
     shell: python3 ec2.py
   
