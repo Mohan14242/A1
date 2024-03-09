@@ -19,6 +19,10 @@
     get_url: 
       url: https://roboshop-builds.s3.amazonaws.com/web.zip
       dest: .
+  - name: unzip the file 
+    unarchive: 
+      src: /home/centos/A1/web.zip
+      dest: /usr/share/nginx/html/
 
 
 
