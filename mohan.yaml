@@ -12,7 +12,7 @@
       path: chiru
       state: directory 
       mode: "0721"
-      user: mohan
+      owner: mohan
       group: developers
     register: output
     ignore_errors: True 
