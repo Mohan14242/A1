@@ -1,5 +1,5 @@
 - name: installing the playbooks 
-  hosts: web
+  hosts: mongodb
   become: yes 
   tasks: 
   - name: installing the nginx 
@@ -12,9 +12,9 @@
       state: started 
       enabled: True 
   - name: removing the deafult web page in the nginx server 
-    file: 
-      path: /usr/share/nginx/html/
-      state: absent
+    command: rm -f *
+    args: 
+      chdir: /usr/share/nginx/html
   - name: downloading the content from the aws s3
     get_url: 
       url: https://roboshop-builds.s3.amazonaws.com/web.zip
