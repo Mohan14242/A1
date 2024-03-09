@@ -3,8 +3,9 @@
   become: yes 
   tasks: 
   - name: getting the file from the 
-    src: /home/centos/fuck.txt
-    dest: .
+    remote:
+      src: /home/centos/fuck.txt
+      dest: .
    
 
 
