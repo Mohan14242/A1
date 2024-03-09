@@ -18,7 +18,7 @@
   - name: downloading the content from the aws s3
     get_url: 
       url: https://roboshop-builds.s3.amazonaws.com/web.zip
-      dest: /home/centos/A1/
+      dest: /home/centos/
       mode: "0777"
   - name: unzip the file 
     unarchive: 
