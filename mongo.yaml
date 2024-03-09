@@ -1,0 +1,8 @@
+- name: configuring the nginx service 
+  hosts: chiru 
+  tasks: 
+  - name: copying the repo to the server 
+    copy: 
+      src: mongo.repo
+      dest: /etc/yum.repos.d/mongo.repo 
+  
