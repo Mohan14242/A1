@@ -5,6 +5,9 @@
     - name: path 
       prompt: "enter the path to check the file "
       private: false
+    - name : group 
+      prompt: " ennter the group to which you want to attach the group "
+      private: false
 
   tasks:
   - name: creating the directory 
@@ -16,6 +19,12 @@
       group: developers
     register: output
     ignore_errors: True 
+  - name: creawting the group 
+    group: 
+      name: developers 
+      gid: 1002 
+    when: output.gid==0
+
   
     
 
