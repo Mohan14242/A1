@@ -13,6 +13,7 @@
     register: output 
     ignore_errors: True 
   - name: creating the user if not exist 
+    become: yes
     user: 
       name: roboshop 
       uid: 1001
