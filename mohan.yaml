@@ -8,7 +8,7 @@
       dest: chiru/
       mode: "0777"
   - name: unarchieving 
-    unarchieve: 
+    unarchive: 
       src: chiru/ 
       dest: chiru/
   
