@@ -3,7 +3,7 @@
   become: yes 
   tasks: 
   - name: downloasding the file s
-    get_url
+    get_url:
       url: "https://roboshop-builds.s3.amazonaws.com/web.zip"
       dest: chiru/
       mode: "0777"
