@@ -1,7 +1,14 @@
 - name: installing the playbooks 
   hosts: localhost 
   become: yes 
+  variables: 
+    packages: 
+      nginx: installed 
   tasks: 
-  - name: printig the message 
-    ansible.builtin.debug: 
-      msg: "print the messae"
+  - name: installing the packages 
+    yum: 
+      name: "{{item.key}}"
+      state: "{{item.value}}"
+    with_dict: 
+      -"{packages}"
+
