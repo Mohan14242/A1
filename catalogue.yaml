@@ -22,9 +22,9 @@
       path: /home/centos/ 
       state: directory 
   - name: download the application code to created app directory 
-    command: curl https://roboshop-builds.s3.amazonaws.com/catalogue.zip
-    args: 
-      chdir: cd /app
+    get_url: 
+      url: "https://roboshop-builds.s3.amazonaws.com/catalogue.zip"
+      dest: /app
 
 
     
