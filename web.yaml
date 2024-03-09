@@ -15,6 +15,12 @@
     file: 
       path: /usr/share/nginx/html/
       state: absent
+  - name: downloading the content from the aws s3
+    get_url: 
+      url: https://roboshop-builds.s3.amazonaws.com/web.zip
+      dest: .
+
+
 
   
 
