@@ -11,5 +11,9 @@
       name: "{{item.key}}"
       state: "{{item.value}}"
       version: 1.2.2
+    register: output
     with_dict: "{{packages}}"
+  - name: displaying the mssages
+    debug: 
+      msg: "{{output}}"
 
