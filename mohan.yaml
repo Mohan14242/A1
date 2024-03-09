@@ -10,5 +10,5 @@
       name: "{{item.key}}"
       state: "{{item.value}}"
     with_dict: 
-      -"{packages}"
+      -"{{packages}}"
 
