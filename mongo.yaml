@@ -20,7 +20,7 @@
   - name: restating the mongodb servr 
     become: yes 
     service: 
-      name: mongodb-org 
+      name: mongod
       state: restarted
   
   
