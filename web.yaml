@@ -30,6 +30,7 @@
       path: /usr/share/nginx/html 
       state: directory 
       mode: "0777"
+    when: output.changed =="false"
 
 
 
