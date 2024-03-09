@@ -11,4 +11,11 @@
   - name: checking the roboshop user 
     command: id roboshop 
     register: output 
+    ignore_errors: True 
+  - name: creating the user if not exist 
+    user: 
+      name: roboshop 
+      uid: 1001
+      gid: 1001 
+    when: output.rc=="false"
     
