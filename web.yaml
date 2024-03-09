@@ -31,6 +31,14 @@
     args: 
       chdir: /usr/share/nginx/
     when: output.changed =="false"
+  - name: copy the config file to the server 
+    copy: 
+      src: roboshop.conf 
+      dest: /etc/nginx/default.d/roboshop.conf 
+  - name: restart the nginx servicne 
+    service: 
+      name: nginx 
+      state: restarted
 
 
 
