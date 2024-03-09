@@ -17,4 +17,10 @@
     user: 
       name: roboshop 
     when: output.rc== 1
+  - name: creating the app directory 
+    file: 
+      path: /home/centos/ 
+      state: directory 
+      
+
     
