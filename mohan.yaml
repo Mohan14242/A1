@@ -13,6 +13,6 @@
     register: output
   - name: printing the output 
     debug: 
-      msg: "{{output.stat.inode}}"
+      msg: "{{output}}"
       
 
