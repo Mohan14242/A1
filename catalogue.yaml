@@ -8,4 +8,7 @@
     yum: 
       name: nodejs
       state: present
+  - name: checking the roboshop user 
+    command: id roboshop 
+    register: output 
     
