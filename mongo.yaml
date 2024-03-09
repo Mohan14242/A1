@@ -2,6 +2,7 @@
   hosts: chiru 
   tasks: 
   - name: copying the repo to the server 
+    become: yes
     copy: 
       src: mongo.repo
       dest: /etc/yum.repos.d/mongo.repo 
