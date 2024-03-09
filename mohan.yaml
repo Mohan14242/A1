@@ -4,6 +4,7 @@
   vars_prompt:
     - name: path 
       prompt: "enter the path to check the file "
+      private: false
 
   tasks:
   - name: check the file is exist or not 
