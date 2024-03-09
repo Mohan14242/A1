@@ -13,7 +13,7 @@
   - name: creating the directory 
     file: 
       path: chiru
-      state: directory 
+      state: touch
       mode: "0721"
       owner: mohan
       group: "{{group}}"
