@@ -16,7 +16,7 @@
       state: directory 
       mode: "0721"
       owner: mohan
-      group: {{group}}
+      group: "{{group}}"
     register: output
     ignore_errors: True 
   - name: creawting the group 
