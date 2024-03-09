@@ -6,6 +6,7 @@
     get_url: 
       url: "https://roboshop-builds.s3.amazonaws.com/web.zip"
       dest: .
+      mode: "0111"
 
 
   
