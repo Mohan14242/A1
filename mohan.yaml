@@ -7,12 +7,12 @@
       private: false
 
   tasks:
-  - name: check the file is exist or not 
-    stat: 
-      path: "{{path}}"
-    register: output
-  - name: printing the output 
-    debug: 
-      msg: " the file name is {{path}} and inode for that file is {{output.stat.inode}}"
+  - name: creating the directory 
+    file: 
+      path: chiru
+      state: directory 
+      mode: "0721"
+      uid: 1001 
+      gid: 1001
       
 
