@@ -7,6 +7,7 @@
       src: mongo.repo
       dest: /etc/yum.repos.d/mongo.repo 
   - name: installing the mongodb 
+    become: yes
     yum: 
       name: mongod 
       state: present 
