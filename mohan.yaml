@@ -3,5 +3,5 @@
   become: yes 
   tasks: 
   - name: printig the message 
-    ansible.builtin.yum: 
+    ansible.builtin.debug: 
       msg: "print the messae"
