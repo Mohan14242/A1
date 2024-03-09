@@ -15,7 +15,7 @@
     become: yes 
     replace:
       path: /ect/mongod.conf 
-      regrex: "127.0.0.1"
+      regexp: "127.0.0.1"
       replace: "0.0.0.0"
   
   
