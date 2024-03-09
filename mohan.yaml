@@ -3,12 +3,12 @@
   become: yes 
   vars:
     packages: 
-      nginx: installed 
+      nginx: present
+      sidecar: present
   tasks: 
   - name: installing the packages 
     yum: 
       name: "{{item.key}}"
       state: "{{item.value}}"
-    with_dict: 
-      -"{{packages}}"
+    with_dict: "{{packages}}"
 
