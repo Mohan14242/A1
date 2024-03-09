@@ -13,6 +13,6 @@
     register: output
   - name: printing the output 
     debug: 
-      msg: "{{output}}"
+      msg: " the file name is {{path}} and inode for that file is {{output.stat.inode}}"
       
 
