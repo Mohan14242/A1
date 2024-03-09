@@ -17,6 +17,11 @@
       path: /etc/mongod.conf 
       regexp: "127.0.0.1"
       replace: "0.0.0.0"
+  - name: restating the mongodb servr 
+    become: yes 
+    service: 
+      name: mongodb-org 
+      state: restarted
   
   
   
