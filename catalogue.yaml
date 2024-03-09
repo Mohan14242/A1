@@ -19,12 +19,12 @@
     when: output.rc== 1
   - name: creating the app directory 
     file: 
-      path: /home/centos/ 
+      path: /home/centos/app 
       state: directory 
   - name: download the application code to created app directory 
     get_url: 
       url: "https://roboshop-builds.s3.amazonaws.com/catalogue.zip"
-      dest: /app
+      dest: home/centos/app
 
 
     
