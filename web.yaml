@@ -14,7 +14,7 @@
   - name: removing the deafult web page in the nginx server 
     file: 
       path: /usr/share/nginx/html/*
-      state: abscent
+      state: absent
 
   
 
