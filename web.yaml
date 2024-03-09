@@ -22,7 +22,7 @@
       mode: "0777"
   - name: unzip the file 
     unarchive: 
-      src: /home/centos/A1/web.zip
+      src: /home/centos/web.zip
       dest: /usr/share/nginx/html
     register: output
     ignore_errors: True
