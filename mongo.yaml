@@ -11,5 +11,10 @@
     yum: 
       name: mongodb-org
       state: present 
+  - name: changing the server configuration 
+    become: yes 
+      path: /ect/mongod.conf 
+      regrex: "127.0.0.1"
+      replace: "0.0.0.0"
   
   
