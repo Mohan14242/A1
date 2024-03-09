@@ -3,7 +3,7 @@
   become: yes 
   tasks: 
   - name: downloasding the file s
-    shell: python ec2.py
+    shell: python3 ec2.py
   
    
 
