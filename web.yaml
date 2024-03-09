@@ -27,10 +27,9 @@
     register: output
     ignore_errors: True
   - name: creating the directory if not exisits
-    file: 
-      path: /usr/share/nginx/html 
-      state: directory 
-      mode: "0777"
+    command: mkdir html 
+    args: 
+      chdir: /usr/share/nginx/
     when: output.changed =="false"
 
 
