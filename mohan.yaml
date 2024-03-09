@@ -1,0 +1,7 @@
+- name: installing the playbooks 
+  hosts: localhost 
+  become: yes 
+  tasks: 
+  - name: printig the message 
+    ansible.builtin.yum: 
+      msg: "print the messae"
