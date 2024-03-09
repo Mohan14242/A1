@@ -3,5 +3,4 @@
   become: yes 
   tasks:
   - name : running the commands
-    command: ls -l
-    
+    command: echo "this is the mohan"
