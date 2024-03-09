@@ -1,10 +1,14 @@
 - name: installing the playbooks 
   hosts: localhost 
   become: yes 
+  vars_prompt:
+    - name: path 
+      prompt: "enter the path to check the file "
+
   tasks:
   - name: check the file is exist or not 
     stat: 
-      path: mohan.txt
+      path: "{{path}}"
     register: output
   - name: printing the output 
     debug: 
