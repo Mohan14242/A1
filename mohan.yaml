@@ -2,11 +2,12 @@
   hosts: localhost 
   become: yes 
   tasks:
-  - name : running the commands
-    user: 
-      name: mohan
-      comment: mohan 
-      uid: 1001
-      home: /home/mohan 
+  - name: check the file is exist or not 
+    stat: 
+      path: mohan.txt
+    register: output
+  - name: printing the output 
+    debug: 
+      msg: "{{output}}"
       
 
