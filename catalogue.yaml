@@ -16,7 +16,5 @@
     become: yes
     user: 
       name: roboshop 
-      uid: 1001
-      gid: 1001 
     when: output.rc== 1
     
