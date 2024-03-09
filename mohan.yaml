@@ -9,7 +9,7 @@
       mode: "0777"
   - name: unarchieving 
     unarchive: 
-      src: chiru/ 
+      src: chiru/web.zip
       dest: chiru/
   
    
