@@ -21,7 +21,7 @@
     ignore_errors: True 
   - name: creawting the group 
     group: 
-      name: developers 
+      name: "{{group}}"
       gid: 1002 
     when: output.gid==0
 
