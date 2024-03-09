@@ -4,11 +4,12 @@
   vars:
     packages: 
       nginx: present
-      sidecar: present
+      nginx: present
   tasks: 
   - name: installing the packages 
     yum: 
       name: "{{item.key}}"
       state: "{{item.value}}"
+      version: 1.2.2
     with_dict: "{{packages}}"
 
