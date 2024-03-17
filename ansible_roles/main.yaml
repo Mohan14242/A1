@@ -1,0 +1,6 @@
+- name: printing the varuables 
+  hosts: locallost 
+  become: yes 
+  roles: 
+    - mongodb 
+    
