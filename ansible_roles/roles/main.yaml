@@ -4,3 +4,4 @@
   roles:
     - mongodb
     - web
+    - user
