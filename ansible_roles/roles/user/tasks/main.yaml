@@ -1,0 +1,3 @@
+- name: printing the variable from user compoent 
+  debug: 
+    msg: "this is from user component"
