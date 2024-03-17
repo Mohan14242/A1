@@ -1,0 +1,3 @@
+- name: this is from common compoent 
+  debug: 
+    msg: "this is from common compoennt "
