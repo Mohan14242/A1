@@ -1,0 +1,5 @@
+- name: printing the variable from mangodb 
+  hosts: locallost 
+  become: yes 
+  roles:
+    - mongodb
