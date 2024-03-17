@@ -1,0 +1,3 @@
+- name: mprintitn the variable 
+  debug: 
+    msg: "this is the mohan who are you"
