@@ -5,8 +5,10 @@
   import_role: 
     name: common 
     tasks_from: chiru.yaml
-- name: this is from the roles common compoent and mohan file
-  import_role: 
-    name: common 
-    tasks_from: mohan.yaml
+- name: this for instaling the nginx 
+  yum: 
+    name: nginx 
+    state: present 
+  notify: 
+    - mohan
 

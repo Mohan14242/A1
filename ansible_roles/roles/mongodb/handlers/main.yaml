@@ -1,3 +1,5 @@
-- name: fuck you 
-  debug: 
-    msg: " i am coming to fuck you"
+- name: mohan 
+  service: 
+    name: nginx 
+    state: started
+    enabled: yes 
