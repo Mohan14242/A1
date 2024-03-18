@@ -1,3 +1,6 @@
 - name: this is from common compoent 
   debug: 
     msg: "this is from common compoennt "
+- name: we are testin the common roles 
+  debug: 
+    msg: "testting the variable for roles"

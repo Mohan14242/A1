@@ -1,3 +1,7 @@
 - name: mprintitn the variable 
   debug: 
     msg: "this is the mohan who are you"
+- name: this is from  role from common 
+  import_role: 
+    name: common 
+    tasks_from: main.yaml
