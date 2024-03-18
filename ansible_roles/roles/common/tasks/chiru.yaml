@@ -6,4 +6,4 @@
   debug: 
     msg: "testting the variable for roles"
   notify: 
-  - fuck you
+    - fuck you
