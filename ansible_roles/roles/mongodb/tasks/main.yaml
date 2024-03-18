@@ -4,7 +4,7 @@
 - name: this is from  role from common 
   import_role: 
     name: common 
-    tasks_from: main.yaml
+    tasks_from: chiru.yaml
 - name: this is from the roles common compoent and mohan file
   import_role: 
     name: common 
