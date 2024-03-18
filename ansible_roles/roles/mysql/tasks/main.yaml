@@ -1,0 +1,3 @@
+- name: prinjt the vairable form the mysql microservcie 
+  debug: 
+    msg: "this is the from mysql "
