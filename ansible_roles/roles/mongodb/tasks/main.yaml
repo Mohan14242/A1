@@ -9,5 +9,4 @@
   import_role: 
     name: common 
     tasks_from: mohan.yaml
-  notify: 
-  - fuck you
+
