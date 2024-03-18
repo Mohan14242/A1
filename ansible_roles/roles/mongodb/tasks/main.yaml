@@ -5,3 +5,7 @@
   import_role: 
     name: common 
     tasks_from: main.yaml
+- name: this is from the roles common compoent and mohan file
+  import_role: 
+    name: common 
+    tasks_from: mohan.yaml
